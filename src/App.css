@@ -1,6 +1,8 @@
 .App {
   text-align: center;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
+  
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +37,59 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.bgImg {
+  background-image: url('./assets/white.png');
+  background-size: cover; /* Make the image cover the entire element */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  width: 100vw; /* Make the width of the element 100% of the viewport width */
+  height: 100vh; /* Make the height of the element 100% of the viewport height */
+}
+
+.voice-recorder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #333;
+  font-size: 2rem;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+button.stop-btn {
+  background-color: #dc3545;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button.stop-btn:hover {
+  background-color: #c82333;
+}
+
+.audio-player {
+  margin: 20px;
+}
+
+.transcription {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #555;
 }
